@@ -23,7 +23,7 @@ function showMovies(movies) {
     const markup = `
     <div class="movie">
         <img
-          src="${IMG_PATH + poster_path}"
+          src="${getPicture(poster_path)}"
           alt="Picture of the ${title}"
         />
         <div class="movie-info">
@@ -42,6 +42,12 @@ function showMovies(movies) {
 
     main.insertAdjacentHTML("beforeend", markup);
   });
+}
+
+function getPicture(path) {
+  if (!path)
+    return `https://images.unsplash.com/photo-1594908900066-3f47337549d8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80`;
+  else return IMG_PATH + path;
 }
 
 function changeClass(ave) {
