@@ -126,3 +126,17 @@ main {
 .movie:hover .overview {
   transform: translateY(0);
 }
+
+/***************** MEDIA QUERIES   *****************/
+@media (max-width: 780px) {
+  .search {
+    width: 30rem;
+  }
+}
+
+@media (max-width: 545px) {
+  header {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
