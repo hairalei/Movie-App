@@ -6,4 +6,8 @@ A simple Movie App where you can search for movies and displays information abou
 
 https://hairalei.github.io/Movie-App/
 
-<img src="/Movie-App.png" width="400" height="400" border="10"/>
+<img src="/Movie-App.png" width="850" height="500" border="10"/>
+
+### Small feature
+
+- Ratings font color change depends on the average. Green color for 8 and above, red for 5 and below, and orange for in between.
